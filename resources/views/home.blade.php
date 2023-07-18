@@ -41,7 +41,7 @@
     <div class="sidenav-header">
       <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
       <a class="navbar-brand m-0" href=" https://demos.creative-tim.com/argon-dashboard/pages/dashboard.html " target="_blank">
-        <img src="./assets/img/logo_sigud.png" class="navbar-brand-img h-100" alt="main_logo">
+        <img src="./assets/img/logo_sigud.png" class="navbar-brand-img h-100" alt="main_logo" >
         <span class="ms-1 font-weight-bold"></span>
       </a>
     </div>
@@ -59,32 +59,33 @@
         <li class="nav-item">
           <a class="nav-link " href="{{ url('/barang') }}">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="ni ni-calendar-grid-58 text-warning text-sm opacity-10"></i>
+              <i class="ni ni-cart text-warning text-sm opacity-10"></i>
             </div>
             
             <span class="nav-link-text ms-1">Inventory</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="./pages/billing.html">
+          <a class="nav-link " href="{{ url('/transaksi')}}">
             <div class="icon icon-trolley icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="ni ni-credit-card text-success text-sm opacity-10"></i>
             </div>
             <span class="nav-link-text ms-1">Transaksi</span>
           </a>
+          
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="./pages/virtual-reality.html">
+          <a class="nav-link " href="{{ url('/pengguna')}}">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="ni ni-app text-info text-sm opacity-10"></i>
+              <i class="ni ni-circle-08 text-info text-sm opacity-10"></i>
             </div>
             <span class="nav-link-text ms-1"> Pengguna</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="./pages/rtl.html">
+          <a class="nav-link " href="{{ url('/laporan')}}">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="ni ni-world-2 text-danger text-sm opacity-10"></i>
+              <i class="ni ni-single-copy-04 text-danger text-sm opacity-10"></i>
             </div>
             <span class="nav-link-text ms-1">Laporan</span>
           </a>
@@ -229,7 +230,7 @@
                 </div>
                 <div class="col-2 text-end">
                   <div class="icon icon-shape bg-gradient-primary shadow-primary text-center rounded-circle">
-                    <i class="ni ni-money-coins text-lg opacity-8" aria-hidden="true"></i>
+                    <i class="ni ni-box-2 text-lg opacity-8" aria-hidden="true"></i>
                   </div>
                 </div>
               </div>
@@ -254,7 +255,7 @@
                 </div>
                 <div class="col-4 text-end">
                   <div class="icon icon-shape bg-gradient-danger shadow-danger text-center rounded-circle">
-                    <i class="ni ni-world text-lg opacity-10" aria-hidden="true"></i>
+                    <i class="ni ni-box-2 text-lg opacity-10" aria-hidden="true"></i>
                   </div>
                 </div>
               </div>
@@ -279,7 +280,7 @@
                 </div>
                 <div class="col-4 text-end">
                   <div class="icon icon-shape bg-gradient-success shadow-success text-center rounded-circle">
-                    <i class="ni ni-paper-diploma text-lg opacity-10" aria-hidden="true"></i>
+                    <i class="ni ni-box-2 text-lg opacity-10" aria-hidden="true"></i>
                   </div>
                 </div>
               </div>
@@ -303,7 +304,7 @@
                 </div>
                 <div class="col-4 text-end">
                   <div class="icon icon-shape bg-gradient-warning shadow-warning text-center rounded-circle">
-                    <i class="ni ni-cart text-lg opacity-10" aria-hidden="true"></i>
+                    <i class="ni ni-box-2 text-lg opacity-10" aria-hidden="true"></i>
                   </div>
                 </div>
               </div>

@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BarangController;
+use App\Http\Controllers\LaporanController;
+use App\Http\Controllers\PenggunaController;
+use App\Http\Controllers\TransaksiController;
+
 
 
 /*
@@ -25,3 +29,10 @@ Route::get('/', function () {
 
 
 Route::get("/barang", [BarangController::class, 'index']);
+
+
+Route::get("/transaksi", [TransaksiController::class, 'index']);
+
+Route::get("/pengguna", [PenggunaController::class, 'index']);
+
+Route::get("/laporan", [LaporanController::class, 'index']);
