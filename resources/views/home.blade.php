@@ -56,23 +56,84 @@
             <span class="nav-link-text ms-1">Dashboard</span>
           </a>
         </li>
-        <li class="nav-item">
+
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#inventory-nav" data-bs-toggle="collapse" href="#">
+                    <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="ni ni-cart text-warning text-sm opacity-10"></i>
+                      </div>
+                    <span class="nav-link-text ms-1">Inventory</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="inventory-nav" class="nav-item nav-content collapse" data-bs-parent="#sidebar-nav">
+                    <li class="nav-item">
+                        <a href="{{ url('/data-barang') }}" class="nav-link active">
+                            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                                <i class="ni ni-box-2 text-warning text-sm opacity-10"></i>
+                              </div>
+                            <span class="nav-link-text ms-1">Data Barang</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ url('/jenis-barang') }}" class="nav-link active">
+                            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                                <i class="ni ni-box-2 text-warning text-sm opacity-10"></i>
+                              </div>
+                            <span class="nav-link-text ms-1">Jenis Barang</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+
+
+        {{-- <li class="nav-item">
           <a class="nav-link " href="{{ url('/barang') }}">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="ni ni-cart text-warning text-sm opacity-10"></i>
             </div>
-            
+
             <span class="nav-link-text ms-1">Inventory</span>
           </a>
-        </li>
-        <li class="nav-item">
+        </li> --}}
+        {{-- <li class="nav-item">
           <a class="nav-link " href="{{ url('/transaksi')}}">
             <div class="icon icon-trolley icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="ni ni-credit-card text-success text-sm opacity-10"></i>
             </div>
             <span class="nav-link-text ms-1">Transaksi</span>
-          </a>
-          
+          </a> --}}
+
+          <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#transaksi-nav" data-bs-toggle="collapse" href="#">
+                    <div class="icon icon-trolley icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="ni ni-credit-card text-success text-sm opacity-10"></i>
+                      </div>
+                    <span class="nav-link-text ms-1">Transaksi</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="transaksi-nav" class="nav-item nav-content collapse" data-bs-parent="#sidebar-nav">
+                    <li class="nav-item">
+                        <a href="{{ url('/barang-masuk') }}" class="nav-link active">
+                            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                                <i class="ni ni-box-2 text-success text-sm opacity-10"></i>
+                            </div>
+                            <span class="nav-link-text ms-1">Barang Masuk</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ url('/barang-keluar') }}" class="nav-link active">
+                            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                                <i class="ni ni-box-2 text-success text-sm opacity-10"></i>
+                            </div>
+                            <span class="nav-link-text ms-1">Barang Keluar</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
         </li>
         <li class="nav-item">
           <a class="nav-link " href="{{ url('/pengguna')}}">
@@ -91,9 +152,9 @@
           </a>
         </li>
         <li class="nav-item mt-3">
-         
+
       </div>
-      
+
     </div>
   </aside>
   <main class="main-content position-relative border-radius-lg ">
@@ -101,7 +162,7 @@
     <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl " id="navbarBlur" data-scroll="false">
       <div class="container-fluid py-1 px-3">
         <nav aria-label="breadcrumb">
-          
+
           <h6 class="font-weight-bolder text-white mb-0">Dashboard</h6>
         </nav>
         <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
@@ -317,7 +378,7 @@
           <div class="card z-index-2 h-100">
             <div class="card-header pb-0 pt-3 bg-transparent">
               <h6 class="text-capitalize"></h6>
-              
+
               </p>
             </div>
             <div class="card-body p-6">
@@ -327,7 +388,7 @@
             </div>
           </div>
         </div>
-       
+
               <button class="carousel-control-prev w-5 me-3" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -547,7 +608,7 @@
             </div>
           </div>
         </div> --}}
-      
+
       <footer class="footer pt-3  ">
         <div class="container-fluid">
           <div class="row align-items-center justify-content-lg-between">
