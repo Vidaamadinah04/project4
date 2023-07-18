@@ -67,7 +67,7 @@
                 </a>
                 <ul id="inventory-nav" class="nav-item nav-content collapse" data-bs-parent="#sidebar-nav">
                     <li class="nav-item">
-                        <a href="{{ url('/data-barang') }}" class="nav-link active">
+                        <a href="{{ url('/barang') }}" class="nav-link active">
                             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                                 <i class="ni ni-box-2 text-warning text-sm opacity-10"></i>
                               </div>
