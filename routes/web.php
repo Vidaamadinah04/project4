@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\BarangController;
 use App\Http\Controllers\LaporanController;
 use App\Http\Controllers\PenggunaController;
@@ -27,6 +28,9 @@ Route::get('/', function () {
     return view('home');
 });
 
+
+Route::get("/registrasi", [LoginController::class, 'registrasi'])->name('registrasi');
+Route::get("/login", [LoginController::class, 'index'])->name('login');
 
 Route::get("/barang", [BarangController::class, 'index']);
 
