@@ -61,4 +61,9 @@ class BarangController extends Controller
     {
         //
     }
+    public function jenisbarang()
+    {
+        return view('barang.jenisbarang');
+    }
+    
 }
