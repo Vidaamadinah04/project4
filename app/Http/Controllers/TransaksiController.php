@@ -61,5 +61,9 @@ class TransaksiController extends Controller
     {
         //
     }
+
+    public function barangkeluar(){
+        return view('transaksi.barangkeluar');
+    }
 }
 

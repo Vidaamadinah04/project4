@@ -33,6 +33,8 @@ Route::get("/barang", [BarangController::class, 'index']);
 
 Route::get("/transaksi", [TransaksiController::class, 'index']);
 
+Route::get("/transaksi/barangkeluar", [TransaksiController::class, 'barangkeluar']);
+
 Route::get("/pengguna", [PenggunaController::class, 'index']);
 
 Route::get("/laporan", [LaporanController::class, 'index']);

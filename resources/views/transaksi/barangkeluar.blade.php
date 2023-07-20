@@ -114,7 +114,7 @@
             </li>
         </ul>
         <li class="nav-item">
-          <a class="nav-link " href="../pages/virtual-reality.html">
+          <a class="nav-link " href="/pengguna">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="ni ni-circle-08 text-info text-sm opacity-10"></i>
             </div>
@@ -141,7 +141,7 @@
       <div class="container-fluid py-1 px-3">
         <nav aria-label="breadcrumb">
 
-          <h6 class="font-weight-bolder text-white mb-0"> BARANG MASUK</h6>
+          <h6 class="font-weight-bolder text-white mb-0"> BARANG KELUAR</h6>
         </nav>
         <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
           <div class="ms-md-auto pe-md-3 d-flex align-items-center">
@@ -269,7 +269,7 @@
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">No</th>
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">ID Barang</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Barang</th>
-                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Tanggal Masuk</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Tanggal Keluar</th>
                       <th class="text-secondary opacity-7"></th>
                     </tr>
                   </thead>
@@ -292,7 +292,7 @@
                         <span class="text-secondary text-xs font-weight-bold">CPU</span>
                       </td>
                       <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">23/04/18</span>
+                        <span class="text-secondary text-xs font-weight-bold">01/01/2023</span>
                       </td>
                       <td class="align-middle">
 
@@ -317,7 +317,7 @@
                         <span class="text-secondary text-xs font-weight-bold">Lampu LED</span>
                       </td>
                       <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">22/03/2019</span>
+                        <span class="text-secondary text-xs font-weight-bold">01/01/2023</span>
                       </td>
                       <td class="align-middle">
 
@@ -341,7 +341,7 @@
                         <span class="text-secondary text-xs font-weight-bold">Harddisk</span>
                       </td>
                       <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">5/04/2019</span>
+                        <span class="text-secondary text-xs font-weight-bold">01/01/2023</span>
                       </td>
                       <td class="align-middle">
 
