@@ -56,22 +56,75 @@
             <span class="nav-link-text ms-1">Dashboard</span>
           </a>
         </li>
-        <li class="nav-item">
+        {{-- <li class="nav-item">
           <a class="nav-link active" href="../pages/tables.html">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="ni ni-cart text-warning text-sm opacity-10"></i>
             </div>
             <span class="nav-link-text ms-1">Inventory</span>
           </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="../pages/billing.html">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="ni ni-credit-card text-success text-sm opacity-10"></i>
-            </div>
-            <span class="nav-link-text ms-1">Transaksi</span>
-          </a>
-        </li>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{{ url('/barang') }}">Data Barang</a></li>
+            <li><a class="dropdown-item" href="{{ url('/jenis-barang') }}">Jenis Barang</a></li>
+        </ul> --}}
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#inventory-nav" data-bs-toggle="collapse" href="#">
+                    <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="ni ni-cart text-warning text-sm opacity-10"></i>
+                      </div>
+                    <span class="nav-link-text ms-1">Inventory</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="inventory-nav" class="nav-item nav-content collapse" data-bs-parent="#sidebar-nav">
+                    <li class="nav-item">
+                        <a href="{{ url('/barang') }}" class="nav-link active">
+                            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                                <i class="ni ni-box-2 text-warning text-sm opacity-10"></i>
+                              </div>
+                            <span class="nav-link-text ms-1">Data Barang</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ url('/jenis-barang') }}" class="nav-link active">
+                            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                                <i class="ni ni-box-2 text-warning text-sm opacity-10"></i>
+                              </div>
+                            <span class="nav-link-text ms-1">Jenis Barang</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+
+          <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#transaksi-nav" data-bs-toggle="collapse" href="#">
+                    <div class="icon icon-trolley icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="ni ni-credit-card text-success text-sm opacity-10"></i>
+                      </div>
+                    <span class="nav-link-text ms-1">Transaksi</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="transaksi-nav" class="nav-item nav-content collapse" data-bs-parent="#sidebar-nav">
+                    <li class="nav-item">
+                        <a href="{{ url('/barang-masuk') }}" class="nav-link active">
+                            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                                <i class="ni ni-box-2 text-success text-sm opacity-10"></i>
+                            </div>
+                            <span class="nav-link-text ms-1">Barang Masuk</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ url('/barang-keluar') }}" class="nav-link active">
+                            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                                <i class="ni ni-box-2 text-success text-sm opacity-10"></i>
+                            </div>
+                            <span class="nav-link-text ms-1">Barang Keluar</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
         <li class="nav-item">
           <a class="nav-link " href="../pages/virtual-reality.html">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
@@ -88,18 +141,18 @@
             <span class="nav-link-text ms-1">Laporan</span>
           </a>
         </li>
-       
-      
+
+
       </ul>
     </div>
-    
+
   </aside>
   <main class="main-content position-relative border-radius-lg ">
     <!-- Navbar -->
     <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl " id="navbarBlur" data-scroll="false">
       <div class="container-fluid py-1 px-3">
         <nav aria-label="breadcrumb">
-          
+
           <h6 class="font-weight-bolder text-white mb-0">DATA BARANG</h6>
         </nav>
         <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
@@ -232,7 +285,7 @@
                       <td>
                         <div class="d-flex px-2 py-1">
                           <div>
-                            
+
                           </div>
                           <div class="d-flex flex-column justify-content-center">
                             <p class="text-xs text-secondary text-xs font-weight-bold">1</p>
@@ -260,7 +313,7 @@
                       <td>
                         <div class="d-flex px-2 py-1">
                           <div>
-                            
+
                           </div>
                           <div class="d-flex flex-column justify-content-center">
                             <p class="text-xs text-secondary text-xs font-weight-bold">2</p>
@@ -283,12 +336,12 @@
                         </div>
                       </td>
                     </tr>
-                   
+
                     <tr>
                       <td>
                         <div class="d-flex px-2 py-1">
                           <div>
-                            
+
                           </div>
                           <div class="d-flex flex-column justify-content-center">
                             <p class="text-xs text-secondary text-xs font-weight-bold">3</p>
@@ -318,10 +371,10 @@
           </div>
         </div>
       </div>
-    
+
       <footer class="footer pt-3  ">
-        
-            
+
+
       </footer>
     </div>
   </main>
