@@ -33,10 +33,12 @@ Route::get("/registrasi", [LoginController::class, 'registrasi'])->name('registr
 Route::get("/login", [LoginController::class, 'index'])->name('login');
 
 Route::get("/barang", [BarangController::class, 'index']);
-
+Route::get("/barang/jenisbarang", [BarangController::class, 'jenisbarang'])->name('jenisbarang');
 
 Route::get("/transaksi", [TransaksiController::class, 'index']);
+Route::get("/transaksi/barangkeluar", [TransaksiController::class, 'barangkeluar'])->name('barangkeluar');
 
 Route::get("/pengguna", [PenggunaController::class, 'index']);
 
 Route::get("/laporan", [LaporanController::class, 'index']);
+
