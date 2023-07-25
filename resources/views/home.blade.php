@@ -1,17 +1,4 @@
-<!--
-=========================================================
-* Argon Dashboard 2 - v2.0.4
-=========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://www.creative-tim.com/license)
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
--->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -86,24 +73,7 @@
             </li>
         </ul>
 
-
-
-        {{-- <li class="nav-item">
-          <a class="nav-link " href="{{ url('/barang') }}">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="ni ni-cart text-warning text-sm opacity-10"></i>
-            </div>
-
-            <span class="nav-link-text ms-1">Inventory</span>
-          </a>
-        </li> --}}
-        {{-- <li class="nav-item">
-          <a class="nav-link " href="{{ url('/transaksi')}}">
-            <div class="icon icon-trolley icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="ni ni-credit-card text-success text-sm opacity-10"></i>
-            </div>
-            <span class="nav-link-text ms-1">Transaksi</span>
-          </a> --}}
+      
 
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -401,7 +371,7 @@
           </div>
         </div>
       </div>
-      {{-- < class="row mt-4">
+  
         <div class="col-lg-7 mb-lg-0 mb-4">
           <div class="card ">
             <div class="card-header pb-0 p-3">

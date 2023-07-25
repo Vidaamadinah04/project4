@@ -1,17 +1,4 @@
-<!--
-=========================================================
-* Argon Dashboard 2 - v2.0.4
-=========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://www.creative-tim.com/license)
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
--->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -47,7 +34,7 @@
       <div class="container-fluid py-1 px-3">
         <nav aria-label="breadcrumb">
 
-          <h6 class="font-weight-bolder text-white mb-0">DATA BARANG</h6>
+          <h6 class="font-weight-bolder text-white mb-0">JENIS BARANG</h6>
         </nav>
         <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
           <div class="ms-md-auto pe-md-3 d-flex align-items-center">
@@ -184,11 +171,9 @@
                         </div>
                       </td>
                       <td>
-                        <p class="text-xs font-weight-bold mb-0">B0001</p>
+                        <p class="text-xs font-weight-bold mb-0">Elektronik</p>
                       </td>
-                      <td class="align-middle text-center text-sm">
-                        <span class="text-secondary text-xs font-weight-bold">Elektronik</span>
-                      </td>
+                      
                       <td class="align-middle">
                         <div class="ms-auto text-">
                          <a class="btn btn-link text-dark px-3 mb-0" href="#"><i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i></a>
@@ -209,11 +194,9 @@
                         </div>
                       </td>
                       <td>
-                        <p class="text-xs font-weight-bold mb-0">B0002</p>
+                        <p class="text-xs font-weight-bold mb-0">Elektronik</p>
                       </td>
-                      <td class="align-middle text-center text-sm">
-                        <span class="text-secondary text-xs font-weight-bold">Elektronik</span>
-                      </td>
+                      
                       <td class="align-middle">
                         <div class="ms-auto text-">
                           <a class="btn btn-link text-dark px-3 mb-0" href="#"><i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i></a>

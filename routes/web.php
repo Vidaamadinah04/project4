@@ -29,14 +29,11 @@ Route::get('/', function () {
     return view('home');
 });
 
-
+//Route Barang
 Route::get("/barang", [BarangController::class, 'index']);
+Route::put("/barang/{id}", [BarangController::class, 'update'])->name('databarang.update');
+
 Route::get("/barang/jenisbarang", [BarangController::class, 'jenisbarang'])->name('jenisbarang');
-
-
-// Route::get('/barang/tambah-barang', 'DatabarangController@tambahBarang')->name('barang.tambah_barang');
-// Route::post('/barang/simpan-barang', 'DatabarangController@simpanBarang')->name('barang.simpan_barang');
-
 
 Route::get("/transaksi", [TransaksiController::class, 'index']);
 Route::get("/transaksi/barangkeluar", [TransaksiController::class, 'barangkeluar'])->name('barangkeluar');

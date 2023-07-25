@@ -1,17 +1,4 @@
-<!--
-=========================================================
-* Argon Dashboard 2 - v2.0.4
-=========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://www.creative-tim.com/license)
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
--->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -136,15 +123,7 @@
                           </g>
                         </svg>
                       </div>
-                      <div class="d-flex flex-column justify-content-center">
-                        <h6 class="text-sm font-weight-normal mb-1">
-                          Payment successfully completed
-                        </h6>
-                        <p class="text-xs text-secondary mb-0">
-                          <i class="fa fa-clock me-1"></i>
-                          2 days
-                        </p>
-                      </div>
+                      
                     </div>
                   </a>
                 </li>
@@ -170,8 +149,9 @@
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">No</th>
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">ID Barang</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Barang</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Deskrpsi</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Stok</th>
-                      <th class="text-secondary opacity-7"></th>
+                      
                     </tr>
                   </thead>
                   <tbody>
@@ -193,8 +173,12 @@
                         <span class="text-secondary text-xs font-weight-bold">CPU</span>
                       </td>
                       <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">Barang sudah ditempat</span>
+                      </td>
+                      <td class="align-middle text-center">
                         <span class="text-secondary text-xs font-weight-bold">23</span>
                       </td>
+                      
                       <td class="align-middle">
                         <div class="ms-auto text-">
                          <a class="btn btn-link text-dark px-3 mb-0" href="#"><i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i></a>
@@ -221,8 +205,12 @@
                         <span class="text-secondary text-xs font-weight-bold">Lampu LED</span>
                       </td>
                       <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">barang sudah dutempat</span>
+                      </td>
+                      <td class="align-middle text-center">
                         <span class="text-secondary text-xs font-weight-bold">1</span>
                       </td>
+                      
                       <td class="align-middle">
                         <div class="ms-auto text-">
                           <a class="btn btn-link text-dark px-3 mb-0" href="#"><i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i></a>
@@ -249,8 +237,12 @@
                         <span class="text-secondary text-xs font-weight-bold">Harddisk</span>
                       </td>
                       <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">Barang sudah ditempat</span>
+                      </td>
+                      <td class="align-middle text-center">
                         <span class="text-secondary text-xs font-weight-bold">5</span>
                       </td>
+                      
                       <td class="align-middle">
                         <div class="ms-auto text-">
                           <a class="btn btn-link text-dark px-3 mb-0" href="#"><i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i></a>
@@ -365,3 +357,56 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+{{-- 
+resources/views/data_barang/index.blade.php  --}}
+
+ {{-- @extends('layouts.app')
+
+@section('content')
+<div class="container">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">No</th>
+                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">ID Barang</th>
+                <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Barang</th>
+                <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Deskripsi</th>
+                <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Stok</th>
+                <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Aksi</th> <!-- Tambah kolom aksi -->
+            </tr>
+        </thead>
+        <tbody>
+            @foreach ($databarang as $barang)
+            <tr>
+                <td class="align-middle">{{ $loop->iteration }}</td>
+                <td class="align-middle">{{ $databarang->id }}</td>
+                <td class="align-middle">{{ $databarang->nama_barang }}</td>
+                <td class="align-middle">{{ $databarang->deskripsi }}</td>
+                <td class="align-middle">{{ $databarang->stok }}</td>
+                <td class="align-middle">
+                    <a href="{{ route('data.edit', $databarang->id) }}" class="btn btn-link text-dark px-3 mb-0">
+                        <i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i> Edit
+                    </a>
+                    <a href="{{ route('data.destroy', $databarang->id) }}" class="btn btn-link text-danger text-gradient px-3 mb-0" onclick="event.preventDefault(); document.getElementById('delete-form-{{ $databarang->id }}').submit();">
+                        <i class="far fa-trash-alt me-2"></i> Delete
+                    </a>
+                    <form id="delete-form-{{ $databarang->id }}" action="{{ route('data.destroy', $databarang->id) }}" method="POST" style="display: none;">
+                        @csrf
+                        @method('DELETE')
+                    </form>
+                </td>
+            </tr>
+            @endforeach
+        </tbody>
+    </table>
+</div>
+@endsection --}}
