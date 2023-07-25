@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\DataBarang;
 use Illuminate\Http\Request;
+
 
 class BarangController extends Controller
 {
@@ -43,7 +45,8 @@ class BarangController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $databarang = Barang::find($id);
+        return view('barang.edit', compact('barang'));
     }
 
     /**
@@ -59,7 +62,13 @@ class BarangController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $barang = Barang::find($id);
+        if ($barang) {
+            $barang->delete();
+        }
+
+        // Redirect ke halaman index atau ke halaman lain yang sesuai setelah menghapus data.
+        return redirect()->route('barang.index')->with('success', 'Barang berhasil dihapus.');
     }
     public function jenisbarang()
     {

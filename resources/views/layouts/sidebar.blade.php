@@ -10,14 +10,13 @@
     <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" href="./pages/dashboard.html">
+          <a class="nav-link " href="">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="ni ni-tv-2 text-primary text-sm opacity-10"></i>
             </div>
             <span class="nav-link-text ms-1">Dashboard</span>
           </a>
         </li>
-
         <ul class="navbar-nav">
             <li class="nav-item">
                 <a class="nav-link collapsed" data-bs-target="#inventory-nav" data-bs-toggle="collapse" href="#">
@@ -28,7 +27,7 @@
                 </a>
                 <ul id="inventory-nav" class="nav-item nav-content collapse" data-bs-parent="#sidebar-nav">
                     <li class="nav-item">
-                        <a href="{{ url('/barang') }}" class="nav-link active">
+                        <a href="{{ url('/barang') }}" class="nav-link ">
                             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                                 <i class="ni ni-box-2 text-warning text-sm opacity-10"></i>
                               </div>
@@ -36,7 +35,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ url('/barang/jenisbarang') }}" class="nav-link active">
+                        <a href="{{ url('/barang/jenisbarang') }}" class="nav-link ">
                             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                                 <i class="ni ni-box-2 text-warning text-sm opacity-10"></i>
                               </div>
@@ -45,8 +44,7 @@
                     </li>
                 </ul>
             </li>
-        </ul>
-
+          </ul>
           <ul class="navbar-nav">
             <li class="nav-item">
                 <a class="nav-link collapsed" data-bs-target="#transaksi-nav" data-bs-toggle="collapse" href="#">
@@ -57,7 +55,7 @@
                 </a>
                 <ul id="transaksi-nav" class="nav-item nav-content collapse" data-bs-parent="#sidebar-nav">
                     <li class="nav-item">
-                        <a href="{{ url('/transaksi') }}" class="nav-link active">
+                        <a href="{{ url('/transaksi') }}" class="nav-link ">
                             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                                 <i class="ni ni-box-2 text-success text-sm opacity-10"></i>
                             </div>
@@ -65,7 +63,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ url('/transaksi/barangkeluar') }}" class="nav-link active">
+                        <a href="{{ url('/transaksi/barangkeluar') }}" class="nav-link ">
                             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                                 <i class="ni ni-box-2 text-success text-sm opacity-10"></i>
                             </div>
