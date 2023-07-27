@@ -14,6 +14,7 @@
   <main>
     <div class="container-fluid">
       <div class="row">
+        
         <div class="col-sm-6 login-section-wrapper">
           <div class="brand-wrapper">
             <img src="assets/img/logo.jpg" alt="logo" class="logo">
@@ -32,12 +33,12 @@
               <div class="form-group mb-3">
                 <input type="checkbox" name="remember" value="1">
                 <label for="remember">Remember me</label>
-                <a href="#!" class="forgot-password-link">Forgot password?</a>
+                <!-- <a href="#!" class="forgot-password-link">Forgot password?</a> -->
               </div>
               
               <input name="login" id="login" class="btn btn-block login-btn" type="button" value="Login">
             </form>
-            <p class="login-wrapper-footer-text">Not Registered yet? <a href="#!" class="text-reset">Create a new account</a></p>
+            <p class="login-wrapper-footer-text">Not Registered yet? <a href="/registrasi" class="text-reset">Create a new account</a></p>
           </div>
         </div>
         <div class="col-sm-6 px-0 d-none d-sm-block">
