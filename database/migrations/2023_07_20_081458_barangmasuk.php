@@ -11,7 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        //
+        Schema::create('barangmasuk', function (Blueprint $table) {
+            $table->id();
+            $table->unsignedBigInteger('id_barang');
+            $table->string('nama_barang');
+            $table->date('tanggal_masuk');
+            $table->integer('jumlah_barang');
+            $table->timestamps();
+        });
     }
 
     /**

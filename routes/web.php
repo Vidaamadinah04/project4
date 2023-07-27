@@ -37,6 +37,9 @@ Route::get("/barang/jenisbarang", [BarangController::class, 'jenisbarang'])->nam
 
 Route::get("/transaksi", [TransaksiController::class, 'index']);
 Route::get("/transaksi/barangkeluar", [TransaksiController::class, 'barangkeluar'])->name('barangkeluar');
+Route::get("/transaksi/tambahbarangmasuk", [TransaksiController::class, 'create'])->name('transaksi.tambahbarangmasuk');
+Route::post("/transaksi/tambahbarangmasuk",  [TransaksiController::class, 'store'])->name('transaksi.tambahbarangmasuk');
+
 
 Route::get("/pengguna", [PenggunaController::class, 'index']);
 
