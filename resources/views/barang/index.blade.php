@@ -36,104 +36,12 @@
 
           <h6 class="font-weight-bolder text-white mb-0">DATA BARANG</h6>
         </nav>
-        <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
-          <div class="ms-md-auto pe-md-3 d-flex align-items-center">
-            <div class="input-group">
-              <span class="input-group-text text-body"><i class="fas fa-search" aria-hidden="true"></i></span>
-              <input type="text" class="form-control" placeholder="Type here...">
-            </div>
-          </div>
-          <ul class="navbar-nav  justify-content-end">
-            <li class="nav-item d-flex align-items-center">
-              <a href="javascript:;" class="nav-link text-white font-weight-bold px-0">
-                <i class="fa fa-user me-sm-1"></i>
-                <span class="d-sm-inline d-none">Sign In</span>
-              </a>
-            </li>
-            <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
-              <a href="javascript:;" class="nav-link text-white p-0" id="iconNavbarSidenav">
-                <div class="sidenav-toggler-inner">
-                  <i class="sidenav-toggler-line bg-white"></i>
-                  <i class="sidenav-toggler-line bg-white"></i>
-                  <i class="sidenav-toggler-line bg-white"></i>
-                </div>
-              </a>
-            </li>
-            <li class="nav-item px-3 d-flex align-items-center">
-              <a href="javascript:;" class="nav-link text-white p-0">
-                <i class="fa fa-cog fixed-plugin-button-nav cursor-pointer"></i>
-              </a>
-            </li>
-            <li class="nav-item dropdown pe-2 d-flex align-items-center">
-              <a href="javascript:;" class="nav-link text-white p-0" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fa fa-bell cursor-pointer"></i>
-              </a>
-              <ul class="dropdown-menu  dropdown-menu-end  px-2 py-3 me-sm-n4" aria-labelledby="dropdownMenuButton">
-                <li class="mb-2">
-                  <a class="dropdown-item border-radius-md" href="javascript:;">
-                    <div class="d-flex py-1">
-                      <div class="my-auto">
-                        <img src="../assets/img/team-2.jpg" class="avatar avatar-sm  me-3 ">
-                      </div>
-                      <div class="d-flex flex-column justify-content-center">
-                        <h6 class="text-sm font-weight-normal mb-1">
-                          <span class="font-weight-bold">New message</span> from Laur
-                        </h6>
-                        <p class="text-xs text-secondary mb-0">
-                          <i class="fa fa-clock me-1"></i>
-                          13 minutes ago
-                        </p>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li class="mb-2">
-                  <a class="dropdown-item border-radius-md" href="javascript:;">
-                    <div class="d-flex py-1">
-                      <div class="my-auto">
-                        <img src="../assets/img/small-logos/logo-spotify.svg" class="avatar avatar-sm bg-gradient-dark  me-3 ">
-                      </div>
-                      <div class="d-flex flex-column justify-content-center">
-                        <h6 class="text-sm font-weight-normal mb-1">
-                          <span class="font-weight-bold">New album</span> by Travis Scott
-                        </h6>
-                        <p class="text-xs text-secondary mb-0">
-                          <i class="fa fa-clock me-1"></i>
-                          1 day
-                        </p>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item border-radius-md" href="javascript:;">
-                    <div class="d-flex py-1">
-                      <div class="avatar avatar-sm bg-gradient-secondary  me-3  my-auto">
-                        <svg width="12px" height="12px" viewBox="0 0 43 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                          <title>credit-card</title>
-                          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g transform="translate(-2169.000000, -745.000000)" fill="#FFFFFF" fill-rule="nonzero">
-                              <g transform="translate(1716.000000, 291.000000)">
-                                <g transform="translate(453.000000, 454.000000)">
-                                  <path class="color-background" d="M43,10.7482083 L43,3.58333333 C43,1.60354167 41.3964583,0 39.4166667,0 L3.58333333,0 C1.60354167,0 0,1.60354167 0,3.58333333 L0,10.7482083 L43,10.7482083 Z" opacity="0.593633743"></path>
-                                  <path class="color-background" d="M0,16.125 L0,32.25 C0,34.2297917 1.60354167,35.8333333 3.58333333,35.8333333 L39.4166667,35.8333333 C41.3964583,35.8333333 43,34.2297917 43,32.25 L43,16.125 L0,16.125 Z M19.7083333,26.875 L7.16666667,26.875 L7.16666667,23.2916667 L19.7083333,23.2916667 L19.7083333,26.875 Z M35.8333333,26.875 L28.6666667,26.875 L28.6666667,23.2916667 L35.8333333,23.2916667 L35.8333333,26.875 Z"></path>
-                                </g>
-                              </g>
-                            </g>
-                          </g>
-                        </svg>
-                      </div>
-                      
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+        @include('layouts.navbar')
         </div>
       </div>
     </nav>
     <!-- End Navbar -->
+    
     <div class="container-fluid py-4">
       <div class="row">
         <div class="col-12">
@@ -146,8 +54,8 @@
                 <table class="table align-items-center mb-0">
                   <thead>
                     <tr>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">No</th>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">ID Barang</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">No</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">ID Barang</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Barang</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Deskrpsi</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Stok</th>
@@ -155,101 +63,16 @@
                     </tr>
                   </thead>
                   <tbody>
+                    @foreach ($databarang as $item)
                     <tr>
-                      <td>
-                        <div class="d-flex px-2 py-1">
-                          <div>
-
-                          </div>
-                          <div class="d-flex flex-column justify-content-center">
-                            <p class="text-xs text-secondary text-xs font-weight-bold">1</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <p class="text-xs font-weight-bold mb-0">B0001</p>
-                      </td>
-                      <td class="align-middle text-center text-sm">
-                        <span class="text-secondary text-xs font-weight-bold">CPU</span>
-                      </td>
-                      <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">Barang sudah ditempat</span>
-                      </td>
-                      <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">23</span>
-                      </td>
-                      
-                      <td class="align-middle">
-                        <div class="ms-auto text-">
-                         <a class="btn btn-link text-dark px-3 mb-0" href="#"><i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i></a>
-                          <a class="btn btn-link text-danger text-gradient px-3 mb-0" href="#"><i class="far fa-trash-alt me-2"></i></a>
-                        </div>
-                      </td>
+                        <th class="text-center text-uppercase text-secondary text-xs font-weight-bold mb-0">{{ $loop->iteration }}</th>
+                        <th class="text-center text-uppercase text-secondary text-xs font-weight-bold mb-0">{{ $item->id }}</th>
+                        <th class="text-center text-uppercase text-secondary text-xs font-weight-bold mb-0">{{ $item->nama_barang }}</th>
+                        <th class="text-center text-uppercase text-secondary text-xs font-weight-bold mb-0">{{ $item->deskripsi }}</th>
+                        <th class="text-center text-uppercase text-secondary text-xs font-weight-bold mb-0">{{ $item->stok }}</th>
+                        
                     </tr>
-
-                    <tr>
-                      <td>
-                        <div class="d-flex px-2 py-1">
-                          <div>
-
-                          </div>
-                          <div class="d-flex flex-column justify-content-center">
-                            <p class="text-xs text-secondary text-xs font-weight-bold">2</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <p class="text-xs font-weight-bold mb-0">B0002</p>
-                      </td>
-                      <td class="align-middle text-center text-sm">
-                        <span class="text-secondary text-xs font-weight-bold">Lampu LED</span>
-                      </td>
-                      <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">barang sudah dutempat</span>
-                      </td>
-                      <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">1</span>
-                      </td>
-                      
-                      <td class="align-middle">
-                        <div class="ms-auto text-">
-                          <a class="btn btn-link text-dark px-3 mb-0" href="#"><i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i></a>
-                          <a class="btn btn-link text-danger text-gradient px-3 mb-0" href="#"><i class="far fa-trash-alt me-2"></i></a>
-                        </div>
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <td>
-                        <div class="d-flex px-2 py-1">
-                          <div>
-
-                          </div>
-                          <div class="d-flex flex-column justify-content-center">
-                            <p class="text-xs text-secondary text-xs font-weight-bold">3</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <p class="text-xs font-weight-bold mb-0">B0003</p>
-                      </td>
-                      <td class="align-middle text-center text-sm">
-                        <span class="text-secondary text-xs font-weight-bold">Harddisk</span>
-                      </td>
-                      <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">Barang sudah ditempat</span>
-                      </td>
-                      <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">5</span>
-                      </td>
-                      
-                      <td class="align-middle">
-                        <div class="ms-auto text-">
-                          <a class="btn btn-link text-dark px-3 mb-0" href="#"><i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i></a>
-                          <a class="btn btn-link text-danger text-gradient px-3 mb-0" href="#"><i class="far fa-trash-alt me-2"></i></a>
-                        </div>
-                      </td>
-                    </tr>
+                    @endforeach
                   </tbody>
                 </table>
               </div>
@@ -366,12 +189,9 @@
 
 
 
-{{-- 
-resources/views/data_barang/index.blade.php  --}}
 
- {{-- @extends('layouts.app')
 
-@section('content')
+{{-- @section('content')
 <div class="container">
     <table class="table table-bordered">
         <thead>
@@ -385,7 +205,7 @@ resources/views/data_barang/index.blade.php  --}}
             </tr>
         </thead>
         <tbody>
-            @foreach ($databarang as $barang)
+            @foreach ($databarang as $databarang)
             <tr>
                 <td class="align-middle">{{ $loop->iteration }}</td>
                 <td class="align-middle">{{ $databarang->id }}</td>
@@ -393,10 +213,10 @@ resources/views/data_barang/index.blade.php  --}}
                 <td class="align-middle">{{ $databarang->deskripsi }}</td>
                 <td class="align-middle">{{ $databarang->stok }}</td>
                 <td class="align-middle">
-                    <a href="{{ route('data.edit', $databarang->id) }}" class="btn btn-link text-dark px-3 mb-0">
+                    <a href="{{ route('', $databarang->id) }}" class="btn btn-link text-dark px-3 mb-0">
                         <i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i> Edit
                     </a>
-                    <a href="{{ route('data.destroy', $databarang->id) }}" class="btn btn-link text-danger text-gradient px-3 mb-0" onclick="event.preventDefault(); document.getElementById('delete-form-{{ $databarang->id }}').submit();">
+                    <a href="{{ route('barang.index', $databarang->id) }}" class="btn btn-link text-danger text-gradient px-3 mb-0" onclick="event.preventDefault(); document.getElementById('delete-form-{{ $databarang->id }}').submit();">
                         <i class="far fa-trash-alt me-2"></i> Delete
                     </a>
                     <form id="delete-form-{{ $databarang->id }}" action="{{ route('data.destroy', $databarang->id) }}" method="POST" style="display: none;">

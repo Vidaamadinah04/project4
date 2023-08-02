@@ -17,6 +17,7 @@ return new class extends Migration
            $table->string('nama_user');
            $table->string('hak_akses');
            $table->integer('status');
+           $table->timestamps();
        });
     }
 

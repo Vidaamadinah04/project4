@@ -11,7 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        //
+        Schema::create('barangkeluar', function (Blueprint $table) {
+            $table->id();
+            $table->string('namabarang');
+            $table->date('tanggal_keluar');
+            $table->timestamps();
+        });
+    
     }
 
     /**
