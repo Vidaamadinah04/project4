@@ -24,10 +24,10 @@
 
 <body class="g-sidenav-show   bg-gray-100">
   <div class="min-height-300 bg-secondary position-absolute w-100"></div>
- 
+
   <!-- sidebar -->
   @include('layouts.sidebar')
-  
+
   <main class="main-content position-relative border-radius-lg ">
     <!-- Navbar -->
     <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl " id="navbarBlur" data-scroll="false">
@@ -123,7 +123,7 @@
                           </g>
                         </svg>
                       </div>
-                      
+
                     </div>
                   </a>
                 </li>
@@ -151,7 +151,7 @@
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Barang</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Deskrpsi</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Stok</th>
-                      
+
                     </tr>
                   </thead>
                   <tbody>
@@ -178,7 +178,7 @@
                       <td class="align-middle text-center">
                         <span class="text-secondary text-xs font-weight-bold">23</span>
                       </td>
-                      
+
                       <td class="align-middle">
                         <div class="ms-auto text-">
                          <a class="btn btn-link text-dark px-3 mb-0" href="#"><i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i></a>
@@ -210,7 +210,7 @@
                       <td class="align-middle text-center">
                         <span class="text-secondary text-xs font-weight-bold">1</span>
                       </td>
-                      
+
                       <td class="align-middle">
                         <div class="ms-auto text-">
                           <a class="btn btn-link text-dark px-3 mb-0" href="#"><i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i></a>
@@ -242,7 +242,7 @@
                       <td class="align-middle text-center">
                         <span class="text-secondary text-xs font-weight-bold">5</span>
                       </td>
-                      
+
                       <td class="align-middle">
                         <div class="ms-auto text-">
                           <a class="btn btn-link text-dark px-3 mb-0" href="#"><i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i></a>
@@ -366,7 +366,7 @@
 
 
 
-{{-- 
+{{--
 resources/views/data_barang/index.blade.php  --}}
 
  {{-- @extends('layouts.app')
