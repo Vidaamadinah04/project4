@@ -141,18 +141,11 @@
     </nav>
     <!-- End Navbar -->
 
-    <div class="col-11 text-end justify-content-end">
-        <a class="btn bg-white " href="javascript:;"><i class="fas fa-plus"></i>&nbsp;&nbsp;Tambah Barang</a>
-        {{-- <a href="{{ route('transaksi.tambahbarangmasuk') }}" class="btn btn-primary">Tambah Barang Masuk</a> --}}
+      <div class="col-11 text-end justify-content-end">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalCreate">Tambah Barang Masuk</button>
+    </div>
 
-      </div>
 
-    {{-- <div class="col-auto">
-        @can('barangmasuk-create')
-        <a href="#" class="btn btn-success" data-toggle="modal" data-target="#ModalCreate">
-            <span style="color:white"></span> {{__('New') }}
-    </a>
-    @endcan --}}
     <div class="container-fluid py-4">
       <div class="row">
         <div class="col-12">
