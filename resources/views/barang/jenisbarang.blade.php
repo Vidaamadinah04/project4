@@ -76,11 +76,11 @@
         </div>
       </div>
 
-      <footer class="footer pt-3  ">
+      
 
         @include('layouts.footer')
 
-      </footer>
+  
     </div>
   </main>
   <div class="fixed-plugin">
