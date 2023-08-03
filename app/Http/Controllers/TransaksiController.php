@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Barang;
+use App\Models\BarangMasuk;
+
 
 class TransaksiController extends Controller
 {
@@ -11,7 +14,7 @@ class TransaksiController extends Controller
      */
     public function index()
     {
-        Return view('transaksi.index');
+        return view('transaksi.index');
     }
 
     /**
@@ -29,7 +32,6 @@ class TransaksiController extends Controller
     {
         //
     }
-
     /**
      * Display the specified resource.
      */

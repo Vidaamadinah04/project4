@@ -8,11 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    {{-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="#"></a>
+            <a class="navbar-brand" href="#">Laravel App</a>
         </div>
-    </nav>
+    </nav> --}}
 
     <div class="py-4">
         @yield('content')
