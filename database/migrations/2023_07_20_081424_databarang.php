@@ -13,9 +13,10 @@ return new class extends Migration
     {
         Schema::create('databarang', function (Blueprint $table) {
             $table->id();
-            $table->string('nama_barang, 255');
+            $table->string('nama_barang');
             $table->text('deskripsi');
             $table->integer('stok');
+            $table->timestamps();
         });
     }
 

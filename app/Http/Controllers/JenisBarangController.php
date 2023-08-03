@@ -2,19 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Databarang;
 use Illuminate\Http\Request;
+use App\Models\JenisBarang;
 
-
-class BarangController extends Controller
+class JenisBarangController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $databarang = Databarang::all();
-        return view('barang.index', compact('databarang'));
+        $jenisbarang = JenisBarang::all();
+        return view('barang.jenisbarang', compact('jenisbarang'));
     }
 
     /**
@@ -22,7 +21,7 @@ class BarangController extends Controller
      */
     public function create()
     {
-    //    
+        //
     }
 
     /**
@@ -62,17 +61,6 @@ class BarangController extends Controller
      */
     public function destroy(string $id)
     {
-       //
-        
-
-        // Redirect ke halaman index atau ke halaman lain yang sesuai setelah menghapus data.
         //
     }
-
-
-    // public function jenisbarang()
-    // {
-    //     return view('barang.jenisbarang');
-    // }
-    
 }

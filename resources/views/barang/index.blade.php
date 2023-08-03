@@ -134,6 +134,7 @@
       </div>
     </nav>
     <!-- End Navbar -->
+
     <div class="container-fluid py-4">
       <div class="row">
         <div class="col-12">
@@ -146,8 +147,8 @@
                 <table class="table align-items-center mb-0">
                   <thead>
                     <tr>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">No</th>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">ID Barang</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">No</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">ID Barang</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Barang</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Deskrpsi</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Stok</th>
@@ -155,6 +156,7 @@
                     </tr>
                   </thead>
                   <tbody>
+                    @foreach ($databarang as $item)
                     <tr>
                       <td>
                         <div class="d-flex px-2 py-1">
@@ -371,42 +373,3 @@ resources/views/data_barang/index.blade.php  --}}
 
  {{-- @extends('layouts.app')
 
-@section('content')
-<div class="container">
-    <table class="table table-bordered">
-        <thead>
-            <tr>
-                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">No</th>
-                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">ID Barang</th>
-                <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Barang</th>
-                <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Deskripsi</th>
-                <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Stok</th>
-                <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Aksi</th> <!-- Tambah kolom aksi -->
-            </tr>
-        </thead>
-        <tbody>
-            @foreach ($databarang as $barang)
-            <tr>
-                <td class="align-middle">{{ $loop->iteration }}</td>
-                <td class="align-middle">{{ $databarang->id }}</td>
-                <td class="align-middle">{{ $databarang->nama_barang }}</td>
-                <td class="align-middle">{{ $databarang->deskripsi }}</td>
-                <td class="align-middle">{{ $databarang->stok }}</td>
-                <td class="align-middle">
-                    <a href="{{ route('data.edit', $databarang->id) }}" class="btn btn-link text-dark px-3 mb-0">
-                        <i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i> Edit
-                    </a>
-                    <a href="{{ route('data.destroy', $databarang->id) }}" class="btn btn-link text-danger text-gradient px-3 mb-0" onclick="event.preventDefault(); document.getElementById('delete-form-{{ $databarang->id }}').submit();">
-                        <i class="far fa-trash-alt me-2"></i> Delete
-                    </a>
-                    <form id="delete-form-{{ $databarang->id }}" action="{{ route('data.destroy', $databarang->id) }}" method="POST" style="display: none;">
-                        @csrf
-                        @method('DELETE')
-                    </form>
-                </td>
-            </tr>
-            @endforeach
-        </tbody>
-    </table>
-</div>
-@endsection --}}
