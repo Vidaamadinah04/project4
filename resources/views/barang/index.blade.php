@@ -368,8 +368,8 @@
 
 
 
-{{--
+{{-- {{--
 resources/views/data_barang/index.blade.php  --}}
 
- {{-- @extends('layouts.app')
+ {{-- @extends('layouts.app') --}}
 
